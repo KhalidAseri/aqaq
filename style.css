@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap');
+:root { --bg: #F8F6FD; --card: #FFFFFF; --text: #1C1B22; --muted: #6B6878; --accent: #5446D6; }
+@media (prefers-color-scheme: dark) { :root { --bg: #121118; --card: #211F28; --text: #ECE9F5; --muted: #A19DB0; --accent: #C6BFFF; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font-family: Tajawal, -apple-system, sans-serif; line-height: 1.8; }
+main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+header { display: flex; align-items: center; gap: 14px; margin-bottom: 24px; }
+header img { width: 64px; height: 64px; border-radius: 16px; }
+header a { color: inherit; text-decoration: none; }
+h1 { font-size: 1.9rem; font-weight: 800; margin: 0; }
+h2 { font-size: 1.15rem; font-weight: 800; margin: 0 0 .3em; }
+.muted { color: var(--muted); }
+.card { background: var(--card); border-radius: 20px; padding: 18px 20px; margin: 12px 0; box-shadow: 0 4px 18px rgba(0,0,0,.06); }
+a { color: var(--accent); }
+.hero { background: linear-gradient(135deg, #5446D6, #8B5CF6, #EC4899); color: #fff; border-radius: 28px; padding: 28px; margin-bottom: 20px; }
+.hero h1 { font-size: 2.2rem; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 12px; }
+.btn { display: inline-block; background: var(--accent); color: var(--bg); padding: .7em 1.4em; border-radius: 999px; font-weight: 800; text-decoration: none; margin: 4px 0; }
+footer { margin-top: 32px; font-size: .9rem; }
